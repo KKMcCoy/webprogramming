@@ -1,0 +1,13 @@
+<main>
+    <h2>{{title}}</h2>
+    <section id='sectionPortfolio'>
+      <h3>Projects</h3>
+            {{#each projects}}
+                <a href={{this.url}}><h4>{{this.topic}}</h4></a>
+                <p>{{this.description}}</p>
+                <a href={{this.url}}>Link: {{this.url}}</a>
+                <hr>
+            {{/each}}  
+    </section>
+    
+</main>

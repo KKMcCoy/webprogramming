@@ -1,0 +1,35 @@
+<main>
+    <h2>{{title}}</h2>
+    <p>{{name}}</p>
+    <p>Years of experience: {{year}}</p>
+    <p>Contact: <a href="mailto:tsuik1@mail.gtc.edu">{{email}}</a></p>
+    <div class="greybackground">
+        <h2>Skills</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Front-End</th>
+                    <th>Back-End</th>
+                    <th>Tools</th>
+                </tr>
+                <tr>
+                    <td>
+                    {{#each frontEndSkill}}
+                    {{this}}<br>
+                    {{/each}}
+                    </td>
+                    <td>
+                    {{#each backEndSkill}}
+                    {{this}}<br>
+                    {{/each}}
+                    </td>
+                    <td>
+                    {{#each tools}}
+                    {{this}}<br>
+                    {{/each}}
+                    </td>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</main>

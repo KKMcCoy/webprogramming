@@ -1,0 +1,440 @@
+header, main, nav, table, form, footer {
+    display: block;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: helvetica, san-serif;
+    text-align: center;
+    margin: 0;
+}
+
+header {
+    background-color: #FFFFFF;
+    text-align: center;
+    height: 100px;
+}
+header img{
+    height: 100px;
+    float: left;
+}
+header h1 {
+    padding-top: 1em;
+    margin-left: 20px;
+    float: left;
+}
+
+nav ul {
+    text-align: left;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+nav li {
+    display: inline-block;
+    padding:0 1em;
+    
+}
+#submenu {
+    display: block;
+    width: 15em;
+}
+
+main{
+    margin-top: 1em;
+    height: 480px;
+    overflow-y: scroll;
+}
+
+nav button {
+    text-decoration: none;
+    width: 6em;
+    font-weight: bold;
+    background-color: #FFFFFF;
+    margin: 10px 10px;;
+    padding: 0.5em;
+    font-weight: bold;
+    font-size: 1.2em;
+    border: none;
+}
+nav button:hover {
+    transform: scale(1.2);
+    background-color: black;
+    color: #FFFFFF;
+    border-radius: 5px;
+    border: grey;
+}
+.greybackground {
+    width: 80%;
+    min-width: 400px;
+    max-width: 600px;
+    padding: 1em 1em 2em 1em;
+    margin: 10px auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+aside {
+    float: left;
+    width: 20%;
+    height: 500px;
+    text-align: left;
+    margin-left: 20px;
+    background-color: rgba(211, 211, 211, 0.4);
+}
+
+aside h3 {
+    margin-left: 20px;
+}
+
+aside ul {
+    list-style-type: circle;
+}
+/*Home page*/
+input#showbutton, input#hidebutton{
+    background-color: black;
+    color: white;
+    width: 8em;
+    border: solid 1pcx black;
+    border-radius: 5px;
+    margin: 1em 2em;
+}
+    
+main section {
+    margin: 2em auto;
+    width: 80%;
+    max-width: 700px;
+}
+/* Table on About page */
+table{
+    max-width: 800px;
+    width: 100%;
+    margin: 5px auto;
+    width:fit-content;
+    table-layout: fixed;
+    border-collapse: collapse;
+    text-align: center;
+    border-radius: 20px;
+    border: solid 2px rgba(211, 211, 211);
+    font-size: 1em;;
+    background-color: rgba(211, 211, 211);
+}
+table th {
+    padding: 1em 3em;
+    font-size: 1em;
+    color: rgb(61, 61, 61);
+}
+table td {
+    padding: 2em;
+}
+
+/* Form on Contact page */
+form {
+    padding: 2em;
+    border: solid 0.5px grey;
+    border-radius: 15px;
+    width: 100%;
+    min-width: 400px;
+    margin: 2em auto;
+    clear: both;
+}
+input, textarea {
+    margin-top: 5px;
+    width: 40%;
+}
+
+label {
+    display: inline-block;
+    width: 80px;
+    text-align: right;
+    margin-right: 5px;
+    vertical-align: middle;
+    font-weight: bold;
+    width: 20%;
+    padding: 2em 1em,
+}
+button#btn-submit{
+    margin-bottom: .5em;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border-color: black;
+    border-radius: 5px;
+    float: right;
+    padding: 0.2em 3em;
+}
+/*Portfolio*/
+main ul {
+    margin: 0 auto;
+    width: 200px;
+}
+main li{
+    padding: 1em 0;
+    text-align: left;
+}
+section#sectionPortfolio, section#sectionContact {
+    text-align: left;
+}
+/*DragDrop*/
+div#dragdrop-container {
+    width: 70%;
+    max-width: 700px;
+    margin: 20px auto;
+    overflow-y: auto;
+}
+#gameBoard {
+	width: 345px;
+	height: 345px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: black;
+}
+#dragdropmessage {
+	background-color:white;
+	font-size: 2.5em;
+	color: rgb(165, 80, 147);
+	text-align: center;
+	width: 345px;
+	height: 80px;
+    margin: 0 auto;
+    font-weight: bold;
+    padding-top: 20px;
+}
+.tile {
+	font-size: 64px;
+	width: 80px;
+	height: 80px;
+	background-color: rgb(76, 154, 156);
+	color: white;
+	text-align: center;
+}
+.square {
+	background-color:black;
+	border: solid;
+	width: 80px;
+	height: 80px;
+	margin: 2px;
+    float: left;
+    text-align: center;
+} 
+
+.dragged {
+	background-color: rgb(165, 80, 147);
+}
+
+/*CHAT page*/
+div#chat-container {
+    width: 70%;
+    max-width: 700px;
+    margin: 20px auto;
+    height: 450px;
+    overflow-y: auto;
+}
+
+.userContainer {
+    float: left;
+    width: 25%;
+    height: 250px;
+    overflow: auto;
+    background-color:rgb(76, 154, 156);
+    border: soild 2px rgb(76, 154, 156);
+    border-radius: 10px;
+    color: white;
+}
+.conversationContainer {
+    float: left;
+    width: 75%;
+    overflow: auto;
+    padding: 10px;
+}
+#data {
+    width: 100%;
+}
+#btn_chatsend{
+    text-decoration: none;
+    background-color: rgb(255, 187, 0);
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgb(255, 187, 0);
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+}
+
+/*AJAX*/
+div#ajax-container {
+    width: 70%;
+    margin: 20px auto;
+    height: 500px;
+    overflow-y: auto;
+    background-color:white;
+}
+div#ajax-container ul {
+    list-style-type: none;
+}
+
+div#ajax-container button {
+    text-decoration: none;
+    width: 6em;
+    font-weight: bold;
+    background-color: rgb(76, 154, 156);
+    margin: 8px 8px;;
+    padding: 0.5em;
+    font-weight: bold;
+    font-size: 1em;
+    border: 3px solid rgb(76, 154, 156);
+    border-radius: 5px;
+    color: white;
+    display: inline-block;
+}
+
+div#ajax-container button:focus {
+    background-color:black;
+    text-decoration: none;
+}
+
+div#ajax-container #ajax-form {
+    width: 80%;
+    margin: 0 auto;
+}
+div#ajax-container form {
+    padding: 2em;
+    border: solid 0.5px grey;
+    border-radius: 8px;
+    background-color: white;
+}
+
+div#ajax-container input {
+    margin-top: 5px;
+    width: 250px;
+}
+
+div#ajax-container label {
+    display: inline-block;
+    width: 80px;
+    text-align: right;
+    margin-right: 5px;
+}
+
+div#ajax-container #result {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: .8em;
+}
+#result table {
+    border-collapse: collapse;
+    margin: 20px auto;
+    overflow: auto;
+    border-radius: 10px;
+    border: none;
+    width: fit-content;
+    overflow-x: auto;
+}
+#result table thead { 
+    background-color: rgb(76, 154, 156);
+    color: white;
+}
+#result table tbody tr:nth-of-type(even) {
+    background-color:rgb(181, 201, 198);
+}
+#result table tbody tr:nth-of-type(odd) {
+    background-color:white;
+}
+
+/*CRUD page*/
+div#crud-container {
+    width: 70%;
+    margin: 20px auto;
+    height: 450px;
+    overflow-y: auto;
+}
+div#getResults{
+    padding: 2em;
+    background-color:  rgb(162, 150, 180);
+    border: solid 0.5px rgb(162, 150, 180);
+    border-radius: 15px;
+    width: 50%;
+    margin: 2em auto;
+    font-weight: bold;
+}
+div.crud-subcontainer {
+    width: 45%;
+    margin: 10px 10px;
+    display: inline-block;
+}
+
+div.crud-subcontainer form {
+    padding: 2em;
+    border: solid 0.5px grey;
+    border-radius: 15px;
+    width: 25%;
+    margin: 2em auto;
+}
+input, textarea {
+    margin-top: 5px;
+    width: 40%;
+}
+
+label {
+    display: inline-block;
+    width: 120px;
+    text-align: right;
+    margin-right: 5px;
+    vertical-align: middle;
+    font-weight: bold;
+    padding: 2em 1em,
+}
+
+div.crud-subcontainer button{
+    background-color: rgb(58, 6, 141);
+    text-decoration: none;
+    width: 6em;
+    font-weight: bold;
+    margin: 8px 8px;;
+    padding: 0.5em;
+    font-weight: bold;
+    font-size: 1em;
+    border: 3px solid rgb(58, 6, 141);
+    border-radius: 5px;
+    color: white;
+    display: inline-block;
+}
+/*Footer*/
+footer {
+    padding: 20px;
+    text-align: center;
+    bottom: 0px;
+    width: 100%;
+    font-size: .8em;
+    font-weight: bold;
+    background-color: #FFFFFF;
+    clear: both;
+}
+
+@media only screen and (max-width: 768px){
+    header{height: auto;}
+    header img, header h1{ float: none;}
+    nav ul{ text-align: center;}
+    #submenu { margin-left: auto; margin-right: auto;}
+    nav ul li {display: block; width: 100%;}
+    aside, div.chat-container,div.crud-subcontainer, div#ajax-container, div#crud-container, #sectionPortfolio {
+        float: none; 
+        width: 100%; 
+        margin-left: auto; 
+        margin-right: auto; 
+        text-align: center; 
+        height: auto; 
+        padding: 10px;
+    }
+    aside li {list-style-type: none;}
+    main, .greybackground{ width: 100%; padding: 5px; height: auto;}
+    #mainvideo, #mainaudio {display: none;}
+    div.chat-container, #ajax-form, #result { width: 100%;}
+    .userContainer, .conversationContainer {float: none; width: 95%; height: auto; padding: 10px}
+}

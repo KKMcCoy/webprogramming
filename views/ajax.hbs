@@ -1,0 +1,24 @@
+{{#each scripts}}
+        <script src={{this}}></script>
+{{/each}}
+
+<!-- submenu of portfoilio--> 
+{{> portfolio-aside }}
+
+<!-- AJAX Page Content--> 
+<div id="ajax-container">
+        
+    <h3>{{ projects.[2].topic }}</h3>
+    <p>{{ projects.[2].description }}</p>
+
+    <button id="btn-get">GET</button>
+    <button id="btn-add">POST</button>
+    <button id="btn-update">PUT</button>
+    <button id="btn-delete">DELETE</button>
+    
+    <br>
+    <div id="ajax-form"></div>
+    <div id="result"></div>
+    <br>
+ 
+</div>

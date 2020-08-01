@@ -1,0 +1,12 @@
+<aside>
+    <h3>Portfolio: Projects</h3>
+    <ul>
+    {{#each projects}}
+        <li>
+            <a href={{this.url}}>
+                <p>{{this.topic}}</p>
+            </a>
+        </li>
+    {{/each}}  
+    </ul>
+</aside>

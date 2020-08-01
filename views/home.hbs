@@ -1,0 +1,21 @@
+<main>
+    <h2>Hi, I'm {{name}}. Nice to meet you!</h2>
+    <p>I am an aspiring web developer with fundamental front-end and back-end programming knowledge.</p>
+    <p>This is a Node.js application using Express.js framework, with handlebars template, to demonstrate what I learned in my course.</p>
+    <section>
+        <h3>Mutlimedia Content</h3>
+        <div id="mediabuttons">
+            <input type="button" value="Show" id="showbutton">
+            <input type="button" value="Hide" id="hidebutton">
+        </div>
+        <video id={{video.id}} controls="controls" >
+            <source src={{video.src}} type={{video.type}}>
+            Your browser does not support the video tag.
+        </video>
+        <br>
+        <audio id={{audio.id}} controls="controls" >
+            <source src={{audio.src}} type={{audio.type}}>
+            Your browser does not support the audio tag.
+        </audio>
+    </section>
+</main>

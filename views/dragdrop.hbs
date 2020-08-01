@@ -1,0 +1,17 @@
+<!-- submenu of portfoilio--> 
+{{> portfolio-aside }}
+
+<!-- DRAG DROP Page Content--> 
+<div id="dragdrop-container">
+    <h3>{{ projects.[0].topic }}</h3>
+    <p>{{ projects.[0].description }}</p>
+
+    <div id="dragdropmessage">
+        Game start!
+    </div>
+    <div id="gameBoard">
+    </div>
+    {{#each scripts}}
+        <script src={{this}}></script>
+    {{/each}}
+</div>

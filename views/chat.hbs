@@ -1,0 +1,21 @@
+<!-- submenu of portfoilio--> 
+{{> portfolio-aside }}
+
+<!-- Chat Page Content--> 
+<div id="chat-container">
+    <h3>{{ projects.[1].topic }}</h3>
+    <p>{{ projects.[1].description }}</p>
+    <p>Click <a href={{ projects.[1].url }} target="_blank" style="font-style: italic">here</a> to test it out with another browser!</p>
+    <div class='userContainer'>
+        <h2>Users</h2>
+        <div id='users'></div>
+    </div>
+    <div class='conversationContainer'>
+        <input id='data'>
+        <input type='button' id='btn_chatsend' value='SEND'>
+        <div id='conversation'></div>
+    </div>
+</div>
+{{#each scripts}}
+        <script src={{this}}></script>
+{{/each}}

@@ -1,0 +1,58 @@
+<!-- submenu of portfoilio--> 
+{{> portfolio-aside }}
+
+<!-- CRUD Page Content--> 
+<div id="crud-container">
+    <h3>{{ projects.[3].topic }}</h3>
+    <p>{{ projects.[3].description }}</p>
+    <br>
+    <h3>All users with GET request</h3>
+    <p><small>The following is all documents in 'users' collection in 'test' database in MongoDB.</small></p>
+    <div id="getResults">
+        {{#each data}}
+        <p>{{ title }} {{ first_name }} {{ last_name }} - <a href="http://{{ website }}"> {{ website }} </a></p>
+        {{/each}}
+    </div>
+
+    <div class="crud-subcontainer">
+        <h3>Insert new users with POST request</h3>
+        <p><small>A new document will be added into database.</small></p>
+        <form action="/api/users" method="post">
+            <label>First name: </label>
+            <input type="text" name="first_name"><br><br>
+            <label>Last name: </label>
+            <input type="text" name="last_name"><br><br>
+            <label>Title :</label>
+            <input type="text" name="title"><br><br>
+            <label>Website:</label>
+            <input type="text" name="website"> <br><br>  
+            <button type="submit">POST</button><br><br>
+        </form>
+    </div>
+
+    <div class="crud-subcontainer">
+        <h3>Update user with PUT request</h3>
+        <p><small>Only user "Karen" will be updated in database.</small></p>
+        <form action="/api/users" method="put">
+            <label>First name: </label>
+            <input type="text" name="first_name" value="Karen" readonly><br><br>
+            <label>Last name: </label>
+            <input type="text" name="last_name"><br><br>
+            <label>Title :</label>
+            <input type="text" name="title"><br><br>
+            <label>Website:</label>
+            <input type="text" name="website"> <br><br>  
+            <button type="submit">PUT</button><br><br>
+        </form>
+    </div>
+
+    <div class="crud-subcontainer">
+        <h3>Remove user with DELETE request</h3>
+        <p><small>Only one user with same last name will be deleted in database.</small></p>
+        <form action="/api/users" method="delete">
+            <label>Last name: </label>
+            <input type="text" name="last_name"><br><br>
+            <button type="submit">DELETE</button>
+        </form>
+    </div>
+</div>
